@@ -1,0 +1,75 @@
+# =============================
+# WordPress .gitignore Template
+# =============================
+
+# Ignore OS & IDE files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# =============================
+# WordPress Core (don’t track WP itself)
+# =============================
+# If you're versioning your own WordPress site, 
+# ignore the core files — you can re-download them anytime.
+wordpress/
+wp-admin/
+wp-includes/
+
+# =============================
+# Uploads & user content (images, etc.)
+# =============================
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/et-cache/
+wp-content/wflogs/
+
+# =============================
+# Plugin / Theme development
+# =============================
+# If you're developing one specific theme or plugin,
+# track only that folder, ignore the rest.
+
+# Ignore all themes
+wp-content/themes/*
+# Except your custom theme (uncomment and replace ‘your-theme’)
+!wp-content/themes/your-theme/
+
+# Ignore all plugins
+wp-content/plugins/*
+# Except your plugin (uncomment and replace ‘your-plugin’)
+!wp-content/plugins/your-plugin/
+
+# =============================
+# Configs & secrets
+# =============================
+wp-config.php
+wp-config-sample.php
+*.sql
+*.sqlite
+*.db
+.env
+.env.*
+
+# =============================
+# Build / Tools
+# =============================
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-error.log*
+dist/
+build/
+tmp/
+.cache/
